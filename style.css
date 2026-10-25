@@ -1,0 +1,510 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #30251f;
+    background-color: #fffaf3;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 8%;
+
+    background-color: #fffaf3;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 10;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #7c2d12;
+}
+
+.logo span {
+    color: #c48a35;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #b45309;
+}
+
+
+/* ================= HOME ================= */
+
+.hero {
+    height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 10%;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.small-title {
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #f5c16c;
+}
+
+.hero-text {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.button {
+    display: inline-block;
+
+    background-color: #b45309;
+    color: white;
+
+    padding: 14px 25px;
+
+    border-radius: 4px;
+
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #7c2d12;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    padding: 100px 10%;
+
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.about-image {
+    width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-content {
+    width: 50%;
+}
+
+.section-label {
+    color: #b45309;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.about h2,
+.contact h2 {
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.about h2 span,
+.contact h2 span {
+    color: #b45309;
+}
+
+.about-content p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.simple-link {
+    color: #b45309;
+    font-weight: bold;
+}
+
+
+/* ================= MENU ================= */
+
+.menu {
+    padding: 90px 10%;
+
+    background-color: #f5eadc;
+
+    text-align: center;
+}
+
+.menu h2,
+.why-us h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.menu-description {
+    margin-bottom: 45px;
+    color: #6b5a4c;
+}
+
+.menu-container {
+    max-width: 900px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+    text-align: left;
+}
+
+.food-item {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.food-item h3 {
+    margin-bottom: 8px;
+}
+
+.food-item p {
+    color: #76675c;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.food-item strong {
+    color: #b45309;
+    white-space: nowrap;
+}
+
+
+/* ================= SPECIAL ================= */
+
+.special {
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 70px 10%;
+
+    background-image:
+        linear-gradient(
+            rgba(50, 25, 10, 0.7),
+            rgba(50, 25, 10, 0.7)
+        ),
+        url("https://images.unsplash.com/photo-1563379091339-03246963d51a?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+}
+
+.special-content {
+    max-width: 550px;
+}
+
+.special h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.special h2 span {
+    color: #f5c16c;
+}
+
+.special p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.special h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+
+/* ================= WHY US ================= */
+
+.why-us {
+    padding: 90px 10%;
+
+    text-align: center;
+}
+
+.features {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 50px;
+}
+
+.feature {
+    max-width: 280px;
+
+    padding: 30px;
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #76675c;
+    line-height: 1.6;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    padding: 90px 10%;
+
+    background-color: #f5eadc;
+
+    display: flex;
+
+    gap: 80px;
+}
+
+.contact-info {
+    width: 50%;
+}
+
+.contact-info > p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.reservation-form {
+    width: 50%;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 8px;
+}
+
+.reservation-form label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.reservation-form input {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 4px;
+}
+
+.reservation-form button {
+    border: none;
+
+    cursor: pointer;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #302019;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 10%;
+}
+
+footer h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+footer h2 span {
+    color: #f5c16c;
+}
+
+footer p {
+    color: #d6c6ba;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+}
+
+.footer-links a:hover {
+    color: #f5c16c;
+}
+
+.copyright {
+    font-size: 13px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        height: 550px;
+        padding: 0 7%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 70px 7%;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    .about-image img {
+        height: 350px;
+    }
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact {
+        flex-direction: column;
+        padding: 70px 7%;
+    }
+
+    .contact-info,
+    .reservation-form {
+        width: 100%;
+    }
+
+}
